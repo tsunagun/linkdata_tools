@@ -1,0 +1,39 @@
+#LINK
+#lang	ja
+#attribution_name	Shusaku Egami
+#license	http://creativecommons.org/publicdomain/zero/1.0/deed.ja
+#file_name	Pre_Socratic_philosophy
+#download_from	http://linkdata.org/work/rdf1s531i
+#namespace	db	http://dbpedia.org/resource/
+#namespace	foaf	http://xmlns.com/foaf/0.1/
+#property	http://www.w3.org/2000/01/rdf-schema#label	http://purl.obolibrary.org/obo/exists_during	db:Master	db:Master	db:Disciple	db:Disciple	db:Disciple	foaf:knows	foaf:knows	foaf:knows	foaf:knows	foaf:knows	foaf:knows
+#object_type_xsd	string:ja	string:en	string:en	string:en	string:en	string:en	string:en	string:en	string:en	string:en	string:en	string:en	string:en
+#property_context	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion	Assertion
+db:Thales	タレス	c. 624 BC - c. 546 BC			db:Anaximander			db:Pherecydes_of_Syros					
+db:Anaximander	アナクシマンドロス	c. 610 BC - c. 546 BC	db:Thales		db:Anaximenes_of_Miletus								
+db:Pittacus	ピッタコス	c. 640 BC - c. 568 BC			db:Pherecydes_of_Syros								
+db:Pherecydes_of_Syros	ペレキュデス	fl. 6th century BC	db:Pittacus		db:Pythagoras			db:Thales					
+db:Anaximenes_of_Miletus	アナクシメネス	b. 585 BC, d.528 BC	db:Anaximander		db:Anaxagoras	db:Diogenes_of_Apollonia		db:Pythagoras					
+db:Pythagoras	ピュタゴラス	c. 570 BC - c. 495 BC	db:Pherecydes_of_Syros		db:Alcmaeon_of_Croton	db:Epicharmus_of_Kos		db:Anaximenes_of_Miletus					
+db:Anaxagoras	アナクサゴラス	c. 500 BC - c. 428 BC	db:Anaximenes_of_Miletus		db:Xenophanes	http://dbpedia.org/resource/Archelaus_(philosopher)		db:Democritus	db:Diogenes_of_Apollonia				
+db:Diogenes_of_Apollonia	ディオゲネス	fl. 425 BC	db:Anaximenes_of_Miletus					db:Anaxagoras					
+db:Alcmaeon_of_Croton	アルクマイオン	fl. 5th centruy BC	db:Pythagoras										
+db:Epicharmus_of_Kos	エピカルモス	c. 540 BC - c. 450 BC	db:Pythagoras										
+http://dbpedia.org/resource/Ameinias_(philosopher)	アメイニアス				db:Parmenides								
+db:Xenophanes	クセノパネス	c. 570 BC - c. 475 BC	db:Anaxagoras		db:Parmenides	db:Empedocles							
+http://dbpedia.org/resource/Archelaus_(philosopher)	アルケラオス	fl. 5th centruy BC	db:Anaxagoras		db:Socrates								
+db:Heraclitus	ヘラクレイトス	c. 535 BC - c. 475 BC			db:Cratylus			db:Parmenides					
+db:Parmenides	パルメニデス	fl. early 5th century BC	http://dbpedia.org/resource/Ameinias_(philosopher)	db:Xenophanes	db:Melissus_of_Samos	db:Zeno_of_Elea	db:Empedocles	db:Heraclitus					
+db:Empedocles	エンペドクレス	c. 490 BC – c. 430 BC	db:Xenophanes	db:Parmenides	db:Gorgias								
+db:Melissus_of_Samos	メリッソス	fl. 5th centruy BC	db:Parmenides										
+db:Zeno_of_Elea	ゼノン	c. 490 BC - c. 430 BC	db:Parmenides		db:Leucippus								
+db:Leucippus	レウキッポス		db:Zeno_of_Elea		db:Democritus								
+db:Democritus	デモクリトス	c. 460 BC - c. 370 BC	db:Leucippus					db:Anaxagoras					
+db:Socrates	ソクラテス	c. 469 BC - c. 399 BC	http://dbpedia.org/resource/Archelaus_(philosopher)		db:Plato			db:Protagoras	db:Gorgias	db:Prodicus	db:Hippias	db:Philolaus	db:Timaeus_of_Locri
+db:Protagoras	プロタゴラス	c. 490 BC – c. 420 BC						db:Socrates	db:Prodicus	db:Hippias			
+db:Gorgias	ゴルギアス	c. 485 BC – c. 380 BC	db:Empedocles		db:Isocrates			db:Socrates					
+db:Prodicus	プロディコス	c. 465 BC – c. 395 BC						db:Socrates	db:Protagoras	db:Hippias			
+db:Hippias	ヒッピアス	fl. late 5th century BC	db:Hegesidamus					db:Socrates	db:Protagoras	db:Prodicus			
+db:Philolaus	フィロラオス	c. 470 BC – c. 385 BC			db:Archytas			db:Socrates					
+db:Timaeus_of_Locri	ティマイオス	c. 420 BC – c. 380 BC						db:Socrates					
+db:Archytas	アルキタス	c. 428 BC – c. 347 BC	db:Philolaus					db:Plato					
