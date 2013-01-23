@@ -17,7 +17,7 @@ module LinkData
       end
       work.tables = Array.new
       parser.xpath("//table[@id='downloadTable']//tbody").each do |file|
-        table_uri = URI.parse(work.uri).merge(file.at_xpath("tr/td[preceding::td[1][normalize-space(text())='テーブルデータ']]/a/@href").text.chomp.strip).to_s
+        table_uri = URI.parse(work.uri).merge(file.at_xpath("tr/td[2]//a/@href").text.chomp.strip).to_s
         table = LinkData::Table.parse(table_uri)
         work.tables << table
       end
@@ -26,12 +26,14 @@ module LinkData
 
     def to_easy_dsp
       lines = Array.new
-=begin
+      merged_namespaces = Hash.new
+      self.tables.map do |table|
+        merged_namespaces.merge!(table.schema.namespaces)
+      end
       lines << '[@NS]'
-      self.tables.schema.namespaces.each do |key, value|
+      merged_namespaces.each do |key, value|
         lines << [key.to_s, value].join("\t")
       end
-=end
       self.tables.each do |table|
         lines << ''
         lines << "[#{table.name}]"
