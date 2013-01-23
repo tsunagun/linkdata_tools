@@ -3,7 +3,6 @@
 require 'uri'
 require 'cgi'
 require 'open-uri'
-require 'rsolr'
 require 'nokogiri'
 
 class String

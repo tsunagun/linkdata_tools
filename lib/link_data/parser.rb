@@ -6,9 +6,7 @@ class Parser
   attr_accessor :uri, :lines, :current_line, :work
 
   def initialize(work_uri)
-    pp Work.parse(work_uri)
+    pp LinkData::Work.parse(work_uri)
   end
-
-
 
 end
